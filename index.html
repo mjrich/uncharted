@@ -1,0 +1,703 @@
+<!doctype html>
+<!--template credit to http://www.codexcoder.com/demos/html/cuda-html-template/-->
+<!--chart credit to https://gist.github.com/Matthew-Weber/5645518-->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>OnePage</title>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!--MainStyle-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Font-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'> 
+	<!-- Modernizr /-->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.tipsy.js"></script> 
+
+</head>
+<body>
+	<!-- Preloader -->
+	<div class="mask"><div id="loader"></div></div>
+	<!--/Preloader -->
+	<header id="ccr-header">
+		<div class="ccr-hbg">
+			<div class="container">
+				<div class="ccr-headarea">
+					<div class="col-xs-12 col-md-4">
+						<div class="ccr-logo element_from_left">
+							<a href="#"><img class="img-responsive" src="images/geopoll.png"></a>
+						</div><!-- /.ccr-logo -->
+					</div>
+					<div class="col-xs-12 col-md-8">
+						<div class="ccr-menu">
+							<nav class="navbar navbar-default" role="navigation">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse navbar-ex1-collapse  element_from_right">
+									<ul class="nav navbar-nav">
+										<li><a href="#ccr-header">Home</a></li>
+										<li><a href="#ccr-service">GeoPoll</a></li>
+										<li><a href="#ccr-skill">Insights</a></li>
+										<li><a href="#ccr-portfolio">Results</a></li>
+										<li><a href="#ccr-about-us">Clients</a></li>
+										<li><a href="#ccr-touch">Contact</a></li>
+									</ul>
+								</div><!-- /.navbar-collapse -->
+							</nav>
+						</div>
+						<!-- /.ccr-menu -->
+					</div>
+				</div>
+				<!-- /.ccr-headarea -->
+			</div> 
+			<div class="ccr-slug">
+				<div class="container">
+					<span>
+						<h1 class="element_fade_in">Hey there, we're excited to share some results<br/>
+							from our mobile phone surveys around the world. </h1>
+						</span>
+
+						<!-- /.ccr-button -->
+					</div>
+				</div><!-- /.ccr-slug -->
+			</div><!-- /.ccr-hbg -->
+		</header> <!-- /#ccr-header -->
+		<!-- /header -->
+		<section id="ccr-service" >
+			<div class="ccr-service-bg">
+				<div class="container">
+					<div class="ccr-title element_from_right">
+						<h1 class="element_from_top">GEOPOLL BRAND TRACKING</h1>
+						<div class="ccr-line"></div>
+						<!-- /.ccr-line -->
+						<div class="ccr-service-slug make-it-appear-left animated fadeInLeft">
+							<h4>At GeoPoll, we are working with the world's leading<br/>organizations looking for insights in emerging markets.
+							</h4>
+						</div>
+					</div>
+					<!-- /.ccr-title -->
+					<!-- /.ccr-service-slug -->
+					<div class="ccr-item">
+						<div class="col-xs-12 col-sm-3 element_from_left">
+						<div class="ccr-first-item">
+								<img class="img-responsive" src="images/flag.png" alt="">
+								<h3>Brands</h3>
+								<p>We're helping brands and organizations track their campaign effectiveness around the world </p>
+							</div>
+							<!-- /.ccr-first-item -->
+						</div>	
+						<div class="col-xs-12 col-sm-3 element_from_left">
+							<div class="ccr-second-iteam">
+								<img class="img-responsive" src="images/crayon.png" alt="">
+								<h3>Customization</h3>
+								<p>We offer fully customized surveys to track the effectiveness of your campaigns</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 element_from_right">
+							<div class="ccr-third-iteam">
+								<img class="img-responsive" src="images/gear.png" alt="">
+								<h3>Platform</h3>
+								<p>Survey data is collected through the mobile phone, automatically analyzed, and results returned in real-time </p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-3 element_from_right">
+							<div class="ccr-fourth-iteam">
+								<img class="img-responsive" src="images/rocket.png" alt="">
+								<h3>Scale</h3>
+								<p>The GeoPoll platform scales across regions, countries and continents </p>
+							</div>
+						</div>
+					</div>
+					<!-- /.ccr-item -->
+				</div>
+			</div>
+			<!-- /.ccr-service-bg -->
+		</section><!-- /#ccr-service -->
+	
+		<section id="ccr-skill">
+			<div class="ccr-skill-bg">
+				<div class="container">
+					<div class="ccr-skill-title element_from_top">
+						<h1>INSIGHTS</h1>
+						<div class="ccr-line"></div>
+						<!-- /.ccr-line -->
+						<div class="ccr-skill-slug element_from_bottom">
+							<p>From our daily panel of respondents in Ghana, we identify the top brands <br/>
+								and uncover the most popular Radio and TV stations and times. 
+							</p>
+						</div> <!-- /.ccr-skill-slug -->
+					</div> <!-- /.ccr-skill-title -->
+					<div class="ccr-skill-item">
+						<div class="col-xs-12 col-sm-3 ccr-first-skill element_from_right">
+							<div class="tw-circle-chart" data-color="#30bae7" data-padding="5px" data-percent="90">90%</div>
+							<h3>Have watched TV or listened to radio in last 30 days</h3>
+						</div>	<!-- /.ccr-first-skill -->
+						<div class="col-xs-12 col-sm-3 ccr-second-skill element_from_right">
+							<div class="tw-circle-chart" data-color="#d74680" data-percent="50">50%</div>
+							<h3>Expressed a preference for Malta beverage</h3>
+
+						</div> <!-- /.ccr-second-skill -->
+						<div class="col-xs-12 col-sm-3 ccr-third-skill element_from_left">
+							<div class="tw-circle-chart" data-color="#15c7a8" data-percent="60">60%</div>
+							<h3>Purchased a Coke product in the past week</h3>
+						</div><!-- /.ccr-third-skill -->
+						<div class="col-xs-12 col-sm-3 ccr-fourth-skill element_from_left">
+							<div class="tw-circle-chart" data-color="#eb7d4b" data-percent="40">40%</div>
+							<h3>Watch UTV on Thursday night at 7pm</h3>
+						</div><!-- /.ccr-fourth-skill -->
+					</div>
+					<!-- /.ccr-skill-item -->
+				</div>
+			</div>	<!-- /#ccr-skill-bg -->
+		
+    
+<div id="container">
+      <p id="headline" class="hed">Media Consumption Over Time</p>
+    </div>  
+    
+<p id="menu" class="menuchoice">Select series: <select>
+    <option value="val1">TV Last Week</option>
+     <option value="val2">TV All Year</option>
+    <option value="val3">Radio Last Week</option>
+     <option value="val4">Radio All Year</option>
+    </select>
+            
+<div id="graphic"> </div>
+
+    
+<script>
+
+//set the margins
+var margin = {top: 50, right: 160, bottom: 80, left: 50},
+    width = 900 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+//set dek and head to be as wide as SVG
+d3.select('#dek')
+	.style('width', width+'px');
+d3.select('#headline')
+	.style('width',width+'px');
+
+//write out your source text here
+var sourcetext= "Source: XXXXX";
+
+// set the type of number here, n is a number with a comma, .2% will get you a percent, .2f will get you 2 decimal points
+var NumbType = d3.format(".2f");
+
+// color array
+var bluescale4 = ["#8BA9D0", "#6A90C1", "#066CA9", "#004B8C"];
+
+//color function pulls from array of colors stored in color.js
+var color = d3.scale.ordinal().range(bluescale4);
+
+//define the approx. number of x scale ticks
+var xscaleticks = 5;
+
+//defines a function to be used to append the title to the tooltip.  you can set how you want it to display here.
+var maketip = function (d) {			               
+			   var tip = '<p class="tip3">' + d.name + '<p class="tip1">' + NumbType(d.value) + '</p> <p class="tip3">'+  formatDate(d.date)+'</p>';
+      		   return tip;}
+      		   
+//define your year format here, first for the x scale, then if the date is displayed in tooltips
+var parseDate = d3.time.format("%m/%d/%y").parse;
+var formatDate = d3.time.format("%b %d, '%y");
+
+//create an SVG
+var svg = d3.select("#graphic").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  
+        
+//make a rectangle so there is something to click on
+svg.append("svg:rect")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("class", "plot");
+
+ //make a clip path for the graph  
+ var clip = svg.append("svg:clipPath")
+    .attr("id", "clip")
+    .append("svg:rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", width)
+    .attr("height", height);   
+    
+// force data to update when menu is changed    
+var menu = d3.select("#menu select")
+    .on("change", change);    
+			    
+//suck in the data, store it in a value called formatted, run the redraw function
+d3.csv("data.csv", function(data) {
+									formatted = data;
+							        redraw();
+    							  });
+
+d3.select(window)
+    .on("keydown", function() { altKey = d3.event.altKey; })
+    .on("keyup", function() { altKey = false; });
+var altKey;
+
+// set terms of transition that will take place
+// when a new economic indicator is chosen   
+function change() {
+  d3.transition()
+      .duration(altKey ? 7500 : 1500)
+      .each(redraw);
+}
+
+// all the meat goes in the redraw function
+function redraw() { 
+
+	// create data nests based on economic indicator (series)
+    var nested = d3.nest()
+		.key(function(d) { return d.type; })
+		.map(formatted)
+    
+    // get value from menu selection
+    // the option values are set in HTML and correspond
+    //to the [type] value we used to nest the data  
+    var series = menu.property("value");
+    
+    // only retrieve data from the selected series, using the nest we just created
+    var data = nested[series];
+    
+    // for object constancy we will need to set "keys", one for each type of data (column name) exclude all others.
+	color.domain(d3.keys(data[0]).filter(function(key) { return (key !== "date" && key !== "type"); }));
+
+	var linedata = color.domain().map(function(name) {
+    				return {name: name,
+					        values: data.map(function(d) {
+							return {name:name, date: parseDate(d.date), value: parseFloat(d[name],10)};
+      						})
+    				};
+  	});
+
+	
+	//make an empty variable to stash the last values into so i can sort the legend
+	var lastvalues=[];
+
+	//setup the x and y scales
+	var x = d3.time.scale()
+		.domain([
+	    d3.min(linedata, function(c) { return d3.min(c.values, function(v) { return v.date; }); }),
+	    d3.max(linedata, function(c) { return d3.max(c.values, function(v) { return v.date; }); })
+		])
+		.range([0, width]);
+
+	var y = d3.scale.linear()
+	    .domain([
+	    d3.min(linedata, function(c) { return d3.min(c.values, function(v) { return v.value; }); }),
+	    d3.max(linedata, function(c) { return d3.max(c.values, function(v) { return v.value; }); })
+	    ])
+	    .range([height, 0]);
+
+	//will draw the line		
+	var line = d3.svg.line()
+    	.x(function(d) { return x(d.date); })
+	    .y(function(d) { return y(d.value); });
+
+	//define the zoom
+	var zoom = d3.behavior.zoom()
+    	.x(x)
+	    .y(y)
+	    .scaleExtent([1,8])
+    	.on("zoom", zoomed);
+
+	//call the zoom on the SVG
+    svg.call(zoom);
+
+	//create and draw the x axis
+	var xAxis = d3.svg.axis()
+    	.scale(x)
+	    .orient("bottom")
+    	.tickPadding(8)
+	    .ticks(xscaleticks);
+    
+    svg.append("svg:g")
+	    .attr("class", "x axis");
+
+	//create and draw the y axis                  
+	var yAxis = d3.svg.axis()
+    	.scale(y)
+	    .orient("left")
+    	.tickSize(0-width)
+	    .tickPadding(8);
+    
+    svg.append("svg:g")
+    	.attr("class", "y axis");
+
+	//bind the data
+	var thegraph = svg.selectAll(".thegraph")
+    	.data(linedata)
+ 
+	//append a g tag for each line and set of tooltip circles and give it a unique ID based on the column name of the data     
+	var thegraphEnter=thegraph.enter().append("g")
+  		.attr("clip-path", "url(#clip)")
+	    .attr("class", "thegraph")
+      	.attr('id',function(d){ return d.name+"-line"; })
+	  	.style("stroke-width",2.5)
+	  	.on("mouseover", function (d) {                                  
+      		d3.select(this)                          //on mouseover of each line, give it a nice thick stroke
+        	.style("stroke-width",'6px');
+        	
+        	var selectthegraphs = $('.thegraph').not(this);     //select all the rest of the lines, except the one you are hovering on and drop their opacity
+        	d3.selectAll(selectthegraphs)
+        		.style("opacity",0.2);
+        	
+        	var getname = document.getElementById(d.name);    //use get element cause the ID names have spaces in them
+        	var selectlegend = $('.legend').not(getname);    //grab all the legend items that match the line you are on, except the one you are hovering on
+
+        	d3.selectAll(selectlegend)    // drop opacity on other legend names
+        		.style("opacity",.2);
+
+        	d3.select(getname)
+        		.attr("class", "legend-select");  //change the class on the legend name that corresponds to hovered line to be bolder        	
+    	})
+    	.on("mouseout",	function(d) {        //undo everything on the mouseout
+      		d3.select(this)
+        		.style("stroke-width",'2.5px');
+        	
+        	var selectthegraphs = $('.thegraph').not(this);
+        	d3.selectAll(selectthegraphs)
+        		.style("opacity",1);
+        	
+        	var getname = document.getElementById(d.name);
+        	var getname2= $('.legend[fakeclass="fakelegend"]')
+        	var selectlegend = $('.legend').not(getname2).not(getname);
+
+        	d3.selectAll(selectlegend)
+        		.style("opacity",1);
+        	
+        	d3.select(getname)
+        		.attr("class", "legend");        	
+    	});
+
+	//actually append the line to the graph
+	thegraphEnter.append("path")
+    	.attr("class", "line")
+      	.style("stroke", function(d) { return color(d.name); })
+      	.attr("d", function(d) { return line(d.values[0]); })
+      	.transition()
+      	.duration(2000)
+      	.attrTween('d',function (d){
+			var interpolate = d3.scale.quantile()
+				.domain([0,1])
+				.range(d3.range(1, d.values.length+1));
+			return function(t){
+				return line(d.values.slice(0, interpolate(t)));
+			};
+		});
+  
+	//then append some 'nearly' invisible circles at each data point  
+	thegraph.selectAll("circle")
+		.data( function(d) {return(d.values);} )
+		.enter()
+		.append("circle")
+			.attr("class","tipcircle")
+			.attr("cx", function(d,i){return x(d.date)})
+			.attr("cy",function(d,i){return y(d.value)})
+			.attr("r",12)
+			.style('opacity', 1e-6)//1e-6
+			.attr ("title", maketip);
+
+	//append the legend
+    var legend = svg.selectAll('.legend')
+        .data(linedata);
+    
+    var legendEnter=legend
+        .enter()
+        .append('g')
+        .attr('class', 'legend')
+        .attr('id',function(d){ return d.name; })
+        .on('click', function (d) {                           //onclick function to toggle off the lines        	
+        	if($(this).css("opacity") == 1){				  //uses the opacity of the item clicked on to determine whether to turn the line on or off        	
+
+	        	var elemented = document.getElementById(this.id +"-line");   //grab the line that has the same ID as this point along w/ "-line"  use get element cause ID has spaces
+	        	d3.select(elemented)
+	        		.transition()
+	        		.duration(1000)
+	        		.style("opacity",0)
+	       			.style("display",'none');
+        	
+	        	d3.select(this)
+	        		.attr('fakeclass', 'fakelegend')
+	     			.transition()
+	        		.duration(1000)
+	      			.style ("opacity", .2);
+      		} else {
+      		
+	      		var elemented = document.getElementById(this.id +"-line");
+	        	d3.select(elemented)
+		        	.style("display", "block")
+		        	.transition()
+	    	    	.duration(1000)
+	        		.style("opacity",1);
+        	
+	        	d3.select(this)
+	        		.attr('fakeclass','legend')
+	      			.transition()
+	        		.duration(1000)
+	      			.style ("opacity", 1);}
+		});
+
+	//create a scale to pass the legend items through
+	var legendscale= d3.scale.ordinal()
+				.domain(lastvalues)
+				.range([0,30,60,90,120,150,180,210]);
+
+	//actually add the circles to the created legend container
+    legendEnter.append('circle')
+        .attr('cx', width +20)
+        .attr('cy', function(d){return legendscale(d.values[d.values.length-1].value);})
+        .attr('r', 7)
+        .style('fill', function(d) { 
+          	return color(d.name);
+        });
+        	        	
+	//add the legend text
+    legendEnter.append('text')
+        .attr('x', width+35)
+        .attr('y', function(d){return legendscale(d.values[d.values.length-1].value);})
+        .text(function(d){ return d.name; });
+
+ 	// set variable for updating visualization
+    var thegraphUpdate = d3.transition(thegraph);
+    
+    // change values of path and then the circles to those of the new series
+    thegraphUpdate.select("path")
+    	.attr("d", function(d, i) {       
+      
+      		//must be a better place to put this, but this works for now
+      		lastvalues[i]=d.values[d.values.length-1].value;         
+        	lastvalues.sort(function (a,b){return b-a});
+      		legendscale.domain(lastvalues);
+      	
+      		return line(d.values); });
+      
+    thegraphUpdate.selectAll("circle")
+	  	.attr ("title", maketip)
+	  	.attr("cy",function(d,i){return y(d.value)})
+	  	.attr("cx", function(d,i){return x(d.date)});
+
+
+	  // and now for legend items
+	  var legendUpdate=d3.transition(legend);
+	  
+	legendUpdate.select("circle")
+		.attr('cy', function(d, i){  
+			return legendscale(d.values[d.values.length-1].value);});
+
+	legendUpdate.select("text")
+		.attr('y',  function (d) {return legendscale(d.values[d.values.length-1].value);});
+
+
+ 	 // update the axes,   
+    d3.transition(svg).select(".y.axis")
+    	.call(yAxis);   
+          
+    d3.transition(svg).select(".x.axis")
+    	.attr("transform", "translate(0," + height + ")")
+        .call(xAxis);
+
+	//make my tooltips work
+	$('circle').tipsy({opacity:.9, gravity:'n', html:true});
+
+
+	//define the zoom function
+	function zoomed() {
+ 
+    	svg.select(".x.axis").call(xAxis);
+    	svg.select(".y.axis").call(yAxis);
+
+		svg.selectAll(".tipcircle")
+			.attr("cx", function(d,i){return x(d.date)})
+			.attr("cy",function(d,i){return y(d.value)});
+			
+		svg.selectAll(".line")
+    		.attr("class","line")
+        	.attr("d", function (d) { return line(d.values)});
+	}
+
+//end of the redraw function
+}
+
+svg.append("svg:text")
+.attr("text-anchor", "start")
+	.attr ("x", 0-margin.left)
+	.attr("y", height+margin.bottom-10)
+	.text (sourcetext)
+	.attr ("class","source"); 	
+
+
+
+</script>
+		</section><!-- /#ccr-skill -->
+		<section id="ccr-portfolio">
+			<div class="ccr-portfolio-bg">
+				<div class="container">
+					<div class="ccr-portfolio-title element_from_top">
+						<h1>RESULTS</h1>
+						<div class="ccr-line"></div>
+						<!-- /.ccr-line -->
+					</div>
+					<!-- /.ccr-portfolio-title -->
+					<div class="ccr-portfolio-slug element_from_left">
+						<p>With the insights from our surveys, clients can make decisions more quickly and confidently<br/>
+							We provide custom portals for our clients to 
+						</p>
+					</div> <!-- /.ccr-skill-slug -->	
+
+					<div class="ccr-portfolio-isotop-menu element_fade_in">
+						<div class="filter">
+							<ul class="ccr-menu">
+								<li><button class="selected" data-filter="all">All</button></li>
+								<li><button data-filter="web">Media</button></li>
+								<li><button data-filter="apps">Food and Agriculture</button></li>
+								<li><button data-filter="icons">Financial Services</button></li>
+							</ul>
+						</div>
+						<ul class="ccr-portfolio-item isotope posts">
+							<li class="all web col-xs-12 col-sm-6">
+								<img class="img-responsive" src="images/p1.png" alt="">
+								<h3>Know which times to buy your advertising on TV.</h3>
+							</li>
+							<!-- /.ccr-first-portfolio -->
+							<li class="all apps col-xs-12 col-sm-6">
+								<img class="img-responsive" src="images/p2.png" alt="">
+								<h3>Know which regions are at risk of food shortages.</h3>
+							</li>
+							<!-- /.ccr-second-portfolio -->
+							<li class="all icons col-xs-12 col-sm-6">
+								<img class="img-responsive" src="images/p3.png" alt="">
+								<h3>Know which small business sectors of economy are in greater need of loans.</h3>
+							</li>
+							<!-- /.ccr-third-portfolio -->
+							<li class="all web col-xs-12 col-sm-6">
+								<img class="img-responsive" src="images/p4.png" alt="">
+								<h3>Know how many people watched your show last night.</h3>
+							</li>
+							<!-- /.ccr-fourth-portfolio -->
+						</ul>
+						<!-- /.ccr-portfolio-item -->
+					</div>
+					<!-- /.ccr-portfolio-isotop-menu -->
+				</div>
+			</div>
+			<!-- /#ccr-portfolio-bg -->
+		</section><!-- /#ccr-portfoli -->
+		<section id="ccr-about-us">
+			<div class="ccr-about-us-bg">
+				<div class="container">
+					<div class="ccr-about-us-title element_from_right">
+						<h1>CLIENTS</h1>
+						<div class="ccr-line"></div>
+						<!-- /.ccr-line -->
+					</div>
+					<!-- /.ccr-about-us-title -->
+					<div class="ccr-about-us-slug element_from_left">
+						<p>Our clients love us!</p>
+					</div>
+					<!-- /.ccr-about-us-slug -->
+					<div class="ccr-us-item">
+						<div class="col-xs-12 col-sm-6 ccr-us-first-item element_from_left">
+							<img class="pull-left" src="images/author.jpg" alt="">
+							<span>“Something”</span>
+							<div class="ccr-designation">
+								<h3>Somebody Someone</h3>
+								<p>The Humanitarian Organization</p>
+							</div>
+							<!-- /.ccr-designation -->
+						</div>
+						<div class="col-xs-12 col-sm-6 ccr-us-second-item element_from_right">
+							<img class="pull-left" src="images/author.jpg" alt="">
+							<span>“Something”</span>
+							<div class="ccr-designation">
+								<h3>Somebody Someone</h3>
+								<p>The Media Group</p>
+							</div>
+							<!-- /.ccr-designation -->
+						</div>
+					</div>
+					<!-- /.ccr-us-item -->	
+				</div>	
+			</div>
+			<!-- /#ccr-about-us -->
+		</section>
+		<section id="ccr-touch">
+			<div class="ccr-touch-bg">
+				<div class="container">
+					<div class="ccr-touch-title element_from_top">
+						<h2>GET IN TOUCH</h2>
+						<div class="ccr-line"></div>
+						<!-- /.ccr-line -->
+					</div>
+					<!-- /.ccr-touch-title -->
+					<span class="ccr-touch-slug">2000 M St NW, Washington, DC 20036, USA</span>
+					<div class="ccr-touch-form col-xs-12 col-sm-12">
+						<div class="input-group col-xs-12 col-sm-6 element_from_left">
+							<input type="text" class="form-control" placeholder="* Your Name">
+						</div>
+
+						<div class="input-group col-xs-12 col-sm-6 element_from_right">
+							<input type="text" class="form-control" placeholder="* Your Email">
+						</div>
+						<div class="input-group col-xs-12 col-sm-12 element_from_bottom">
+							<textarea name="msg" rows="6" placeholder="* Your Message"></textarea>
+						</div>
+					</div>
+					<!-- /.ccr-touch-form -->
+					<button type="button" class="ccr-button btn btn-default">SEND MESSAGE</button>
+				</div>			
+			</div>
+			<!-- /#ccr-touch bg-->
+		</section> 
+		<!-- /ccr touch section -->
+		<footer id="ccr-footer">
+			<div class="ccr-footer-bg">
+				<ul class="ccr-footer-menu">
+					<li><a href="https://www.facebook.com/GeoPoll">Facebook</a></li>
+					<li><a href="https://twitter.com/GeoPoll">Twitter</a></li>
+					<li><a href="https://www.linkedin.com/company/geopoll">Linkedin</a></li>
+
+				</ul>
+			</div>
+			<!-- /#ccr-footer -->
+		</footer> 
+		<!-- /footer -->
+		<a href="#ccr-header" id="ccr-back-top" title="Back to Top" style="display: inline;">Back to Top</a>
+		<!--========================================end===========================-->
+		<!--js library-->
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+		<!--Isotop library-->
+		<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+		<!--Bootstrap JS-->
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<!-- Main Javascript File -->
+		<script src="js/main.js" type="text/javascript"></script> 
+
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+  chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+</body>
+</html>
